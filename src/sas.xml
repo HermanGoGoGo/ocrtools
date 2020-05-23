@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EnumerationResults ServiceEndpoint="https://tdkblob01.blob.core.windows.net/" ContainerName="tdkpalletinfo">
+    <Delimiter>/</Delimiter>
+    <Blobs>
+        <Blob>
+            <Name>fields.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:42:36 GMT</Creation-Time>
+                <Last-Modified>Wed, 20 May 2020 03:34:51 GMT</Last-Modified>
+                <Etag>0x8D7FC6EC14BA1EF</Etag>
+                <Content-Length>849</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>dkMZxVmCBRnlRcQJ0D2Ybg==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 1.pdf</Name>
+            <Properties>
+                <Creation-Time>Fri, 08 May 2020 08:21:21 GMT</Creation-Time>
+                <Last-Modified>Fri, 08 May 2020 08:21:21 GMT</Last-Modified>
+                <Etag>0x8D7F328CA4E7369</Etag>
+                <Content-Length>251091</Content-Length>
+                <Content-Type>application/pdf</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>93ILeRQhUSL1AnH4ApJRpg==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 1.pdf.labels.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 09:18:34 GMT</Creation-Time>
+                <Last-Modified>Thu, 21 May 2020 15:58:26 GMT</Last-Modified>
+                <Etag>0x8D7FD9FCC648A44</Etag>
+                <Content-Length>4067</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>aUsc+y3fDMhp9gvrOvdl4w==</Content-MD5>
+                <Cache-Control>no-cache</Cache-Control>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 1.pdf.ocr.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:42:22 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:42:22 GMT</Last-Modified>
+                <Etag>0x8D7F0A651B586B2</Etag>
+                <Content-Length>75174</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>VayouQfXbo/VDYSRIgDq2g==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 2.pdf</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:30:32 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:30:32 GMT</Last-Modified>
+                <Etag>0x8D7F0A4AAC221C0</Etag>
+                <Content-Length>172551</Content-Length>
+                <Content-Type>application/pdf</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>x0IQj6RNH3xXzhHm93ETwA==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 2.pdf.labels.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 09:20:15 GMT</Creation-Time>
+                <Last-Modified>Thu, 21 May 2020 15:50:24 GMT</Last-Modified>
+                <Etag>0x8D7FD9EACB235B2</Etag>
+                <Content-Length>1520</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>kverY7Z9IkFdjW6ZxhrZow==</Content-MD5>
+                <Cache-Control>no-cache</Cache-Control>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 2.pdf.ocr.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:43:14 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:43:14 GMT</Last-Modified>
+                <Etag>0x8D7F0A670E954E4</Etag>
+                <Content-Length>75860</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>1ulXhYHcm5wzHn7njEGJYg==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 3.pdf</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:30:32 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:30:32 GMT</Last-Modified>
+                <Etag>0x8D7F0A4AAC88BEB</Etag>
+                <Content-Length>130770</Content-Length>
+                <Content-Type>application/pdf</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>8rJJMaJBH3CmBXjNYNfMcw==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 3.pdf.labels.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 09:20:44 GMT</Creation-Time>
+                <Last-Modified>Wed, 20 May 2020 07:16:34 GMT</Last-Modified>
+                <Etag>0x8D7FC8DBAB6D596</Etag>
+                <Content-Length>1522</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>VdeYofmpiZI1J5GBxGlAsA==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 3.pdf.ocr.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:50:39 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:56:18 GMT</Last-Modified>
+                <Etag>0x8D7F0A8444515AC</Etag>
+                <Content-Length>77703</Content-Length>
+                <Content-Type>application/json; charset=utf-8</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>kZyaUabdtXXmMzFgEt4SfA==</Content-MD5>
+                <Cache-Control>no-cache</Cache-Control>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 4.pdf</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:30:32 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:30:32 GMT</Last-Modified>
+                <Etag>0x8D7F0A4AAA1725D</Etag>
+                <Content-Length>68444</Content-Length>
+                <Content-Type>application/pdf</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>F2CNCL+HDtljV/co0va7ww==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 4.pdf.labels.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 09:21:07 GMT</Creation-Time>
+                <Last-Modified>Wed, 13 May 2020 02:58:50 GMT</Last-Modified>
+                <Etag>0x8D7F6E9902D8811</Etag>
+                <Content-Length>1528</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>a0gfFlPu6UBDZgSc6RkC9g==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 4.pdf.ocr.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:57:55 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:57:55 GMT</Last-Modified>
+                <Etag>0x8D7F0A87E3A271A</Etag>
+                <Content-Length>63614</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>K1NZEFIxX+iWKOfX3M6kOA==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 5.pdf</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:30:32 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:30:32 GMT</Last-Modified>
+                <Etag>0x8D7F0A4AAA59210</Etag>
+                <Content-Length>68480</Content-Length>
+                <Content-Type>application/pdf</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>QqENzhhHJlFCblukE+KNWA==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 5.pdf.labels.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:59:37 GMT</Creation-Time>
+                <Last-Modified>Wed, 20 May 2020 07:19:13 GMT</Last-Modified>
+                <Etag>0x8D7FC8E195CF9EF</Etag>
+                <Content-Length>1528</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>+Nby21GnzpTYj+YeXeouqw==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 5.pdf.ocr.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:59:26 GMT</Creation-Time>
+                <Last-Modified>Thu, 07 May 2020 02:46:15 GMT</Last-Modified>
+                <Etag>0x8D7F230CFF2F28F</Etag>
+                <Content-Length>62480</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>7ecQrpstPyrVnexETUYdPw==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 6.pdf</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:30:32 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:30:32 GMT</Last-Modified>
+                <Etag>0x8D7F0A4AAA9B1C3</Etag>
+                <Content-Length>68486</Content-Length>
+                <Content-Type>application/pdf</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>jz5UzXHk8EH3PrIsZdzRGw==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 6.pdf.labels.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 09:21:23 GMT</Creation-Time>
+                <Last-Modified>Wed, 20 May 2020 07:16:53 GMT</Last-Modified>
+                <Etag>0x8D7FC8DC5B23164</Etag>
+                <Content-Length>1526</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>F5kGYF4rCy3MYXtv3yDkaw==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdk china 19080201 pallet info 6.pdf.ocr.json</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 03:59:54 GMT</Creation-Time>
+                <Last-Modified>Tue, 05 May 2020 03:59:54 GMT</Last-Modified>
+                <Etag>0x8D7F0A8C4D4E256</Etag>
+                <Content-Length>63612</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>4yAOsf3/+zGS12w7eHLVXA==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemo01.fott</Name>
+            <Properties>
+                <Creation-Time>Tue, 05 May 2020 08:36:51 GMT</Creation-Time>
+                <Last-Modified>Thu, 07 May 2020 03:20:27 GMT</Last-Modified>
+                <Etag>0x8D7F23596C52D57</Etag>
+                <Content-Length>5820</Content-Length>
+                <Content-Type>application/json; charset=utf-8</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>VTQL73IwscEu/iQsY0bWhQ==</Content-MD5>
+                <Cache-Control>no-cache</Cache-Control>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemo02.fott</Name>
+            <Properties>
+                <Creation-Time>Wed, 06 May 2020 01:26:25 GMT</Creation-Time>
+                <Last-Modified>Wed, 06 May 2020 07:46:23 GMT</Last-Modified>
+                <Etag>0x8D7F191931FA741</Etag>
+                <Content-Length>5577</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>oD8XeM2LqvxabUgivl9LJQ==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemo03.fott</Name>
+            <Properties>
+                <Creation-Time>Mon, 11 May 2020 08:15:24 GMT</Creation-Time>
+                <Last-Modified>Mon, 11 May 2020 08:15:24 GMT</Last-Modified>
+                <Etag>0x8D7F583749E5BAB</Etag>
+                <Content-Length>2521</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>VHwlrRjziQwSu1GiKoH0sQ==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemo04.fott</Name>
+            <Properties>
+                <Creation-Time>Mon, 11 May 2020 08:17:08 GMT</Creation-Time>
+                <Last-Modified>Tue, 12 May 2020 06:19:43 GMT</Last-Modified>
+                <Etag>0x8D7F63C75E36A4A</Etag>
+                <Content-Length>6903</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>Mxh68+/HQki9/YABU8e1vA==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemo05.fott</Name>
+            <Properties>
+                <Creation-Time>Tue, 12 May 2020 02:01:32 GMT</Creation-Time>
+                <Last-Modified>Tue, 12 May 2020 06:36:10 GMT</Last-Modified>
+                <Etag>0x8D7F63EC20B7BA8</Etag>
+                <Content-Length>7081</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>IV585Mb/cMuy/pBDDNUf/w==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemoLCH.fott</Name>
+            <Properties>
+                <Creation-Time>Thu, 07 May 2020 02:37:19 GMT</Creation-Time>
+                <Last-Modified>Fri, 08 May 2020 10:13:35 GMT</Last-Modified>
+                <Etag>0x8D7F338783E03BB</Etag>
+                <Content-Length>6544</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>56SftPDJAt2Fc3N3Zegu3Q==</Content-MD5>
+                <Cache-Control>no-cache</Cache-Control>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemoXGF.fott</Name>
+            <Properties>
+                <Creation-Time>Tue, 12 May 2020 08:19:26 GMT</Creation-Time>
+                <Last-Modified>Wed, 13 May 2020 09:03:35 GMT</Last-Modified>
+                <Etag>0x8D7F71C84EF6CEF</Etag>
+                <Content-Length>7473</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>qlwLP+k3TP/okT2m0ILkBg==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemoXGF2.fott</Name>
+            <Properties>
+                <Creation-Time>Thu, 14 May 2020 10:35:58 GMT</Creation-Time>
+                <Last-Modified>Tue, 19 May 2020 04:04:54 GMT</Last-Modified>
+                <Etag>0x8D7FBA9C98C4703</Etag>
+                <Content-Length>6882</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>6D2y0kFsfMvE9qBmlslQug==</Content-MD5>
+                <Cache-Control/>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <Blob>
+            <Name>tdkPalletInfoDemoXGF3.fott</Name>
+            <Properties>
+                <Creation-Time>Mon, 18 May 2020 08:15:30 GMT</Creation-Time>
+                <Last-Modified>Thu, 21 May 2020 15:58:12 GMT</Last-Modified>
+                <Etag>0x8D7FD9FC3C407A7</Etag>
+                <Content-Length>6797</Content-Length>
+                <Content-Type>application/octet-stream</Content-Type>
+                <Content-Encoding/>
+                <Content-Language/>
+                <Content-MD5>M2DpQAQK9nQ/kr/RH4irlw==</Content-MD5>
+                <Cache-Control>no-cache</Cache-Control>
+                <Content-Disposition/>
+                <BlobType>BlockBlob</BlobType>
+                <AccessTier>Hot</AccessTier>
+                <AccessTierInferred>true</AccessTierInferred>
+                <LeaseStatus>unlocked</LeaseStatus>
+                <LeaseState>available</LeaseState>
+                <ServerEncrypted>true</ServerEncrypted>
+            </Properties>
+        </Blob>
+        <BlobPrefix>
+            <Name>test01/</Name>
+        </BlobPrefix>
+    </Blobs>
+    <NextMarker/>
+</EnumerationResults>
