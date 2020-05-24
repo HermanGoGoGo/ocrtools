@@ -231,7 +231,7 @@ class App extends React.Component {
         return (
             // <Common.Provider value={Commons}>
                 <Layout>
-                    <Spin spinning={true}>
+                    <Spin className="startLoading" size="large" spinning={this.state.loading}>
                     </Spin>
                     <Header className="header">
                         <Space>

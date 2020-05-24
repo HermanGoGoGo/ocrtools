@@ -23,11 +23,14 @@ class GetContainer extends React.Component {
         fetch(global.base.url + "/container/getBlobContainers", {method: 'GET'}).then(function (res) {
             console.log(res);
             res.json().then(function (data) {
-                console.log(data);
+                console.log("data=",data);
                 for (let i = 0; i < data.data.length; i++) {
                     childrens.push(<Option key={data.data[i].name}>{data.data[i].name}</Option>);
                 }
                 console.log(childrens);
+                _this.setState({
+                    children: childrens,
+                })
                 _this.props.handleContainerChange("");
             })
             .then(function (err) {
@@ -44,7 +47,7 @@ class GetContainer extends React.Component {
 
     render() {
         return (
-            <Spin spinning={this.state.loading}>
+            // <Spin spinning={this.state.loading}>
                 <Select
                     style={{width: 185}}
                     placeholder="请选择容器"
@@ -52,7 +55,7 @@ class GetContainer extends React.Component {
                 >
                     {this.state.children}
                 </Select>
-            </Spin>
+            // </Spin>
         )
     }
 }
