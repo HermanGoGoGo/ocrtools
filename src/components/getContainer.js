@@ -1,6 +1,6 @@
 import React from 'react';
 import "./../common.js";
-import {Select} from 'antd';
+import {Select, Spin} from 'antd';
 const {Option} = Select;
 
 class GetContainer extends React.Component {
@@ -8,11 +8,15 @@ class GetContainer extends React.Component {
         super(props);
         this.state = {
             children: [],
-            containerName: ""
+            containerName: "",
+            loading: false
         }
     }
 
     componentDidMount() {
+        // this.setState({
+        //     loading: true
+        // })
         const childrens = [];
         let _this = this;
         console.log("start", global.base.url);
@@ -24,9 +28,7 @@ class GetContainer extends React.Component {
                     childrens.push(<Option key={data.data[i].name}>{data.data[i].name}</Option>);
                 }
                 console.log(childrens);
-                _this.setState({
-                    children: childrens,
-                })
+                _this.props.handleContainerChange("");
             })
             .then(function (err) {
                 console.log(err);
@@ -42,13 +44,15 @@ class GetContainer extends React.Component {
 
     render() {
         return (
-            <Select
-                style={{width: 185}}
-                placeholder="请选择容器"
-                onChange={this.handleChange}
-            >
-                {this.state.children}
-            </Select>
+            <Spin spinning={this.state.loading}>
+                <Select
+                    style={{width: 185}}
+                    placeholder="请选择容器"
+                    onChange={this.handleChange}
+                >
+                    {this.state.children}
+                </Select>
+            </Spin>
         )
     }
 }

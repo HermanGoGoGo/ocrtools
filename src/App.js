@@ -3,7 +3,7 @@ import logo  from './logo.svg';
 import './App.css';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
-import {Layout, Menu, Breadcrumb, Select, List, Avatar, Upload, message, Button} from 'antd';
+import {Layout, Menu, Breadcrumb, Select, List, Avatar, Upload, message, Button, Spin, Alert, Switch, Space  } from 'antd';
 
 import "./common";
 
@@ -28,6 +28,7 @@ class App extends React.Component {
             showButton: false,
             pdf: "",
             loading: false,
+            centerLoading: false,
             submitFileUrl: "",
             fileUid:"",
             keyValuePairs: [],
@@ -40,9 +41,21 @@ class App extends React.Component {
     // 处理 选择容器
     handleContainerChange = (cName) => {
         this.setState({
-            containerName:cName
+            containerName:cName,
+            loading: false,
+            templateName: "",
         })
     }
+
+    componentDidMount() {
+        this.setState({
+            loading: true
+        })
+    }
+
+    toggle = value => {
+        this.setState({ loading: value });
+    };
 
     // 处理 选择模板
     handleTemplateChange = (tName) => {
@@ -62,6 +75,9 @@ class App extends React.Component {
             this.setState({loading: true});
             return;
         }
+        if(info.file.status === 'error'){
+            this.setState({centerLoading: false});
+        }
         if(info.file.status === 'done') {
             // determine how to load file based on MIME type of the file
             // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
@@ -77,9 +93,9 @@ class App extends React.Component {
                     );
                     break;
                 case "application/pdf":
-                    this.readPdf(info.file.originFileObj);
+                    this.loadPdfFile(info.file.originFileObj);
                     console.log("info.file.originFileObj===", info.file.originFileObj);
-                    // const imageUrl = this.createObjectURL(info.file);loadPdfFile
+                    // const imageUrl = this.createObjectURL(info.file);
                     // console.log("imageUrl===", imageUrl);
                     // this.setState({
                     //     imageUrl,
@@ -114,11 +130,17 @@ class App extends React.Component {
                         console.log("keyValuePairs===", JSON.stringify(pageResults.keyValuePairs));
                     }
                 }
+                this.setState({
+                    centerLoading: false
+                })
             }
         }
     };
 
     beforeUpload = (file) => {
+        this.setState({
+            centerLoading: true
+        })
         const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'application/pdf';//
         if(!isJpgOrPng) {
             // this.loadPdfFile(file);
@@ -137,11 +159,12 @@ class App extends React.Component {
         return (window.URL) ? window.URL.createObjectURL(object) : "";
     }
 
-    readPdf = (file) => {
+    loadPdfFile = (file) => {
         let self = this;
         // pdf.js无法直接打开本地文件,所以利用FileReader转换
         const reader = new FileReader();
         reader.readAsArrayBuffer(file);
+        $('#pdf-container canvas').remove();
         reader.onload = function (e) {
             const typedarray = new Uint8Array(this.result);
             const loadingTask = PDFJS.getDocument(typedarray);
@@ -194,104 +217,61 @@ class App extends React.Component {
             var canvas = document.getElementById("pageNum" + (index + 1));
             // 将 canvas 转成 base64 格式的图片
             let base64ImgSrc = canvas.toDataURL("image/png")
-            const img = document.createElement("img")
-            img.setAttribute('class', 'pdf-img');
-            img.src = base64ImgSrc
-            img.style.width = '100%';
-            // 将图片挂载到 dom 中
-            $('#pdf-container').append(img);
+            // const img = document.createElement("img")
+            // img.setAttribute('class', 'pdf-img');
+            // img.src = base64ImgSrc
+            // img.style.width = '100%';
+            // // 将图片挂载到 dom 中
+            // $('#pdf-container').append(img);
         });
     }
-
-    loadPdfFile = (file) => {
-        let cMapUrl = this.pdfjsCMapUrl(pdfjsLib.version);
-        const fileReader = new FileReader();
-
-        fileReader.onload = (e) => {
-            const typedArray = new Uint8Array(e.target.result);
-            const loadingTask = pdfjsLib.getDocument({data: typedArray, cMapUrl, cMapPacked: true});
-            loadingTask.promise.then((pdf) => {
-                this.state.currPdf = pdf;
-                this.loadPdfPage(pdf, this.state.currPage);
-                console.log("this.state.currPdf === ", this.state.currPdf.toString());
-            }, (reason) => {
-                this.setState({
-                    shouldShowAlert: true,
-                    alertTitle: "Failed loading PDF",
-                    alertMessage: reason.toString(),
-                });
-                console.log(reason.toString());
-            });
-        };
-
-        fileReader.readAsArrayBuffer(file);
-    }
-
-    pdfjsCMapUrl = (version) => {
-        return `//fotts.azureedge.net/npm/pdfjs-dist/${version}/cmaps/`;
-    }
-
-    loadPdfPage = async (pdf, pageNumber) => {
-        const page = await pdf.getPage(pageNumber);
-        const defaultScale = 2;
-        const viewport = page.getViewport({ scale: defaultScale });
-
-        // Prepare canvas using PDF page dimensions
-        const canvas = document.createElement("canvas");
-        const context = canvas.getContext("2d");
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        // Render PDF page into canvas context
-        const renderContext = {
-            canvasContext: context,
-            viewport,
-        };
-
-        const renderTask = page.render(renderContext);
-        await renderTask.promise;
-        this.setState({
-            currPage: pageNumber,
-            imageUri: canvas.toDataURL("image/jpeg", 0.7),
-            imageWidth: canvas.width,
-            imageHeight: canvas.height,
-        });
-    }
-
 
     render () {
         const {containerName, templateName, imageUrl, submitFileUrl, fileUid, keyValuePairs} = this.state;
         return (
             // <Common.Provider value={Commons}>
                 <Layout>
+                    <Spin spinning={true}>
+                    </Spin>
                     <Header className="header">
-                        <GetContainer handleContainerChange={this.handleContainerChange}></GetContainer>
-                        {this.state.templateName !== false && <Upload
-                            name="files"
-                            className="uploadBox"
-                            showUploadList={false}
-                            action={submitFileUrl}
-                            beforeUpload={this.beforeUpload}
-                            onChange={this.handleUpladChange}>
-                            {/*{this.state.loading ? <LoadingOutlined/> : <PlusOutlined/>}*/}
-                            <Button>
-                                <UploadOutlined/> 打开文件
-                            </Button>
-                        </Upload>}
+                        <Space>
+                            <GetContainer handleContainerChange={this.handleContainerChange}></GetContainer>
+                            {this.state.templateName !== false && <Upload
+                                name="files"
+                                className="uploadBox"
+                                showUploadList={false}
+                                action={submitFileUrl}
+                                beforeUpload={this.beforeUpload}
+                                onChange={this.handleUpladChange}>
+                                {/*{this.state.loading ? <LoadingOutlined/> : <PlusOutlined/>}*/}
+                                <Button>
+                                    <UploadOutlined/> 打开文件
+                                </Button>
+                            </Upload>}
+                        </Space>
                     </Header>
                     <Layout>
                         <Sider width={200} className="site-layout-background site-layout-left">
                             {this.state.containerName && <GetTemplateList key={this.state.containerName} container={this.state.containerName} handleTemplateChange={this.handleTemplateChange}></GetTemplateList>}
                         </Sider>
                         <Layout style={{padding: '0'}}>
+
                             <Content
                                 className="site-layout-background"
                                 style={{
                                     padding: 24, margin: 0, minHeight: 280,
                                 }}
                             >
-                                {imageUrl && <img src={imageUrl} alt="avatar" style={{width: '100%'}}/>}
-                                <div id="pdf-container"></div>
+
+                                <Spin spinning={this.state.centerLoading}>
+                                    {/*<Alert*/}
+                                    {/*    message="操作指引："*/}
+                                    {/*    description="<ul><li>1、选择容器</li><li>2、选择模板</li><li>3、打开要识别的文件</li></ul>"*/}
+                                    {/*    type="info"*/}
+                                    {/*/>*/}
+                                    {imageUrl && <img src={imageUrl} alt="avatar" style={{width: '100%'}}/>}
+                                    <div id="pdf-container"></div>
+                                </Spin>
                             </Content>
                         </Layout>
                         <Sider width={280} className="site-layout-background site-layout-right">
@@ -306,6 +286,7 @@ class App extends React.Component {
                     </Layout>
                 </Layout>
             // </Common.Provider>
+
         )
     }
 }
