@@ -72,7 +72,7 @@ class App extends React.Component {
         let _this = this;
         console.log("info===", info);
         if(info.file.status === 'uploading') {
-            this.setState({loading: true});
+            // this.setState({loading: true});
             return;
         }
         if(info.file.status === 'error'){
